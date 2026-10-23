@@ -1,0 +1,12 @@
+[
+    {
+        "Scenario": "Invalid credentials",
+        "username":"rupam",
+        "password":"1234"
+    },
+    {
+        "Scenario": "Empty data",
+        "username":" ",
+        "password":" "
+    }
+]
