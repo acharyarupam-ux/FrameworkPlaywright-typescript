@@ -1,4 +1,4 @@
-import { Page , Locator} from '@playwright/test'
+import { Page , Locator, expect} from '@playwright/test'
 
 export class Dashboard
 {
@@ -10,9 +10,9 @@ export class Dashboard
   }
 
   async clickSidePanel(menuName: string) {
-    await this.sidePanelItems
-      .filter({ hasText: menuName })
-      .click();
+    const menu = this.page.getByRole('link', {name : menuName,exact:true})
+    await expect(menu).toBeVisible()
+    await menu.click()
   }
 
 }
