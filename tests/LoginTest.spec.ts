@@ -33,4 +33,4 @@ test(`Negative Login :${data.Scenario}`,async({page})=>{
   }
   
 })
-}
+};

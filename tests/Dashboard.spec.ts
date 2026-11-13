@@ -7,4 +7,4 @@ test ('Dashboard Screen' ,async({ page, DashboardPage })=>{
     // const DashboardPage = new Dashboard(page)
     DashboardPage.clickSidePanel('Admin')
 
-})
+});
