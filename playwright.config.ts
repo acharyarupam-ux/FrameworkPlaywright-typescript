@@ -46,7 +46,7 @@ nodeVersion:process.version,
      baseURL: process.env.Base_URL,
      launchOptions:{
       slowMo:5000,
-    headless:false
+   // headless:true,
      },
 
     /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
