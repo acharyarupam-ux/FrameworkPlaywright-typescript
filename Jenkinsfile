@@ -7,6 +7,7 @@ pipeline {
         stage('Build') {
             steps {
                 bat 'npm install'
+                bat 'npx playwright install chromium'
                 bat 'npx playwright test'
             }
         }
